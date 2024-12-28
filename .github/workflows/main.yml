@@ -1,0 +1,14 @@
+name: Run Python
+on:
+    push:
+
+jobs:
+
+    build:
+        name: run py1
+        runs-on: ubuntu-latest #執行的環境
+        steps:
+        - uses: actions/checkout@v2
+        - name: Run python
+          run: |
+              python3 test.py
