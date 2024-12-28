@@ -1,6 +1,8 @@
 name: Run Python
 on:
     push:
+    schedule: 
+    - cron: 0 0 * * * #crontab guru格式 每小時設定排程時間
 
 jobs:
 
